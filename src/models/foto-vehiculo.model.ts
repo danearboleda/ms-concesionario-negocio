@@ -15,6 +15,10 @@ export class FotoVehiculo extends Entity {
   })
   nombre: string;
 
+  @property({
+    type: 'number',
+  })
+  id_vehiculo?: number;
 
   constructor(data?: Partial<FotoVehiculo>) {
     super(data);

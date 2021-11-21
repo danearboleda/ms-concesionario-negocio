@@ -21,6 +21,10 @@ export class UsuarioVendedor extends Entity {
   })
   clave: string;
 
+  @property({
+    type: 'number',
+  })
+  id_vendedor?: number;
 
   constructor(data?: Partial<UsuarioVendedor>) {
     super(data);
